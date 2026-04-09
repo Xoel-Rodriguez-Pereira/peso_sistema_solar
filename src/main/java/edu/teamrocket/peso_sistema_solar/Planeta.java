@@ -13,8 +13,8 @@ public enum Planeta {
     URANO(8.686e+25, 2.5559e7),    
     NEPTUNO(1.024e+26, 2.4746e7);
     
-    public double masa;
-    public double radio;
+    double masa;
+    double radio;
     private final double G = 6.67300e-11;
 
     Planeta(double masa, double radio) {

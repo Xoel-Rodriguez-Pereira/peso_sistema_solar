@@ -7,17 +7,22 @@ public class Main {
         double peso = 1.0; // kg
         
         for(Planeta planeta : Planeta.values()){
-            System.out.printf("Your weight on %s is %f N%n", planeta.name(), planeta.pesoSuperficie(peso));
+            System.out.printf("Tu peso en %s es %f N%n", planeta.name(), planeta.pesoSuperficie(peso));
         }
          
-        System.out.println("\nYour weight only on the terrestrial planets: ");
+        System.out.println("\nTu peso en los planetas Terrestres: ");
         for(Planeta planeta: Planeta.getPlanetasTerrestres()){
-            System.out.printf("Your weight on %s is %f N%n", planeta.name(), planeta.pesoSuperficie(peso));
+            System.out.printf("Tu peso en %s es %f N%n", planeta.name(), planeta.pesoSuperficie(peso));
         }
          
-        System.out.println("\nYour weight only on the gas giant planets: ");
+        System.out.println("\nTu peso en los planetas Gigantes Gaseosos: ");
         for(Planeta planeta: Planeta.getGigantesGaseosos()){
-            System.out.printf("Your weight on %s is %f N%n", planeta.name(), planeta.pesoSuperficie(peso));
+            System.out.printf("Tu peso en %s es %f N%n", planeta.name(), planeta.pesoSuperficie(peso));
+        }
+
+        System.out.println("\nTu peso en los planetas Gigantes Helados: ");
+        for(Planeta planeta: Planeta.getGigantesHelados()){
+            System.out.printf("Tu peso en %s es %f N%n", planeta.name(), planeta.pesoSuperficie(peso));
         }
     }
 
